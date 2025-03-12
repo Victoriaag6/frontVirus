@@ -12,7 +12,7 @@ h1 {
   background: linear-gradient(90deg, #ff6b6b, #feca57);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: white; /* Cambiar color a blanco */
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
